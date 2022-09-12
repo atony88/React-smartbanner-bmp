@@ -21,7 +21,6 @@ class SmartBanner extends Component {
     appStoreLanguage: PropTypes.string,
     button: PropTypes.node,
     storeText: PropTypes.objectOf(PropTypes.string),
-    price: PropTypes.objectOf(PropTypes.string),
     force: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
@@ -52,12 +51,6 @@ class SmartBanner extends Component {
       android: 'In Google Play',
       windows: 'In Windows Store',
       kindle: 'In the Amazon Appstore',
-    },
-    price: {
-      ios: 'Free',
-      android: 'Free',
-      windows: 'Free',
-      kindle: 'Free',
     },
     force: '',
     title: '',
@@ -287,10 +280,7 @@ class SmartBanner extends Component {
     const link =
       `${this.props.url[this.state.type]}` ||
       this.state.settings.getStoreLink() + this.state.appId;
-    const inStore = `
-      ${this.props.price[this.state.type]} - ${
-  this.props.storeText[this.state.type]
-}`;
+    const inStore = `${this.props.storeText[this.state.type]}`;
     let icon;
 
     if (isClient) {

@@ -1,14 +1,8 @@
 {
-  "name": "react-smartbanner",
-  "version": "5.1.4",
+  "name": "react-smartbanner-bmp",
+  "version": "1.0.1",
   "description": "Smart app banner react version.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/patw0929/react-smartbanner"
-  },
-  "bugs": {
-    "url": "https://github.com/patw0929/react-smartbanner/issues"
-  },
+  "repository": {},
   "main": "dist/main.js",
   "peerDependencies": {
     "react": "16.x",
