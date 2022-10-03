@@ -337,7 +337,7 @@ class SmartBanner extends Component {
     };
 
     return (
-      <div className={wrapperClassName}>
+      <div className={wrapperClassName} id='smartbanner'>
         <div className="smartbanner-container">
           <button type="button" className="smartbanner-close" aria-label="close" onClick={this.close}>
             &times;
